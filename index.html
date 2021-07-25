@@ -1,0 +1,928 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+		<link rel="icon" href="favicon.png" type="image/x-icon">
+		<title>Купить батуты. Качественные и безопасные батуты для всей семьи!</title>
+<script>
+function CountBox() {
+	dateNow = new Date();
+	amount = ((23)*60*60 + (59)*60 + (60 - dateNow.getSeconds()))*1000;
+	if (amount < 0) {
+		setTimeout("CountBox()", 10000)
+	} else {
+	days = 0;
+	days1 = 0;
+	days2 = 0;
+	hours = 0;
+	hours1 = 0;
+	hours2 = 0;
+	mins = 0;
+	mins1 = 0;
+	mins2 = 0;
+	secs = 0;
+	secs1 = 0;
+	secs2 = 0;
+	out = "";
+	amount = Math.floor(amount / 1e3);
+		days2 = (days >= 10) ? days.toString().charAt(1) : days.toString().charAt(0);
+	amount = amount % 86400;
+	hours = Math.floor(amount / 3600);
+	hours1 = (hours >= 10) ? hours.toString().charAt(0) : '0';
+	hours2 = (hours >= 10) ? hours.toString().charAt(1) : hours.toString().charAt(0);
+	amount = amount % 3600;
+	mins = Math.floor(amount / 60);
+	mins1 = (mins >= 10) ? mins.toString().charAt(0) : '0';
+	mins2 = (mins >= 10) ? mins.toString().charAt(1) : mins.toString().charAt(0);
+	amount = amount % 60;
+	secs = Math.floor(amount);
+	secs1 = (secs >= 10) ? secs.toString().charAt(0) : '0';
+	secs2 = (secs >= 10) ? secs.toString().charAt(1) : secs.toString().charAt(0);
+
+	document.getElementById("TimerD").innerHTML = days1;
+	document.getElementById("TimerH").innerHTML = hours1 + hours2;
+	document.getElementById("TimerM").innerHTML = mins1 + mins2;
+	document.getElementById("TimerS").innerHTML = secs1 + secs2;
+
+	document.getElementById("TimerD1").innerHTML = days1;
+	document.getElementById("TimerH1").innerHTML = hours1 + hours2;
+	document.getElementById("TimerM1").innerHTML = mins1 + mins2;
+	document.getElementById("TimerS1").innerHTML = secs1 + secs2;
+
+	document.getElementById("TimerD2").innerHTML = days1;
+	document.getElementById("TimerH2").innerHTML = hours1 + hours2;
+	document.getElementById("TimerM2").innerHTML = mins1 + mins2;
+	document.getElementById("TimerS2").innerHTML = secs1 + secs2;
+
+	document.getElementById("TimerD3").innerHTML = days1;
+	document.getElementById("TimerH3").innerHTML = hours1 + hours2;
+	document.getElementById("TimerM3").innerHTML = mins1 + mins2;
+	document.getElementById("TimerS3").innerHTML = secs1 + secs2;
+
+	setTimeout("CountBox()", 1e3)
+	}
+	}
+	window.onload = function () {
+		CountBox()
+	}
+
+	function ShowObj(IdName) {
+		el = document.getElementById(IdName);
+		el.style.display = 'block';
+	}
+  
+  function ShowDetails(IdName, batutId) {
+	el = document.getElementById(IdName);
+	el.style.display = 'block';
+
+	var i = gid("batut_info" + batutId).value;
+	var t = gid("batut_tech" + batutId).value;
+
+	gid("batut_info").innerHTML = i;
+	gid("batut_tech").innerHTML = t;
+
+	if(batutId == "140"){
+		gid("ib").src = "assets/b-1-1.jpg";
+		gid("ib1").src = "assets/b-1-1.jpg";
+		gid("ib2").src = "assets/b-1-2.jpg";
+		gid("ib3").src = "assets/b-1-3.jpg";
+		gid("ib4").src = "assets/b-1-4.jpg";
+		gid("ib5").src = "assets/b-1-5.jpg";
+	}
+	else{
+		gid("ib").src = "assets/b-2-1.jpg";
+		gid("ib1").src = "assets/b-2-1.jpg";
+		gid("ib2").src = "assets/b-2-2.jpg";
+		gid("ib3").src = "assets/b-2-3.jpg";
+		gid("ib4").src = "assets/b-2-4.jpg";
+		gid("ib5").src = "assets/b-2-5.jpg";
+	}
+
+	if('popup_details'==IdName) {
+		gid("popup_details").style.top=window.pageYOffset+'px';
+	}
+	
+	gid("popup_details").style.display = "block";
+	}
+
+	function HideObj(IdName) {
+	el = document.getElementById(IdName);
+	el.style.display = 'none';
+	}
+
+	function Podrobnee(ID) {
+	parent.framedescr.document.write ("<div style='margin:32px; text-align:center; color:#222222;'>Загрузка ...</div>");
+	parent.framedescr.location.href = "/g/descr.php?Frame=1&TID=" + ID;
+	ShowObj('WindowPodrobnee');
+	}
+
+	function HTML(IdName, Text) {el = document.getElementById(IdName);el.innerHTML = Text;}
+
+	function gid(name){return document.getElementById(name);}
+
+	function ChangeImg(im){gid("ib").src = gid("ib" + im).src;}
+</script>
+	</head>
+	<body>
+		<div class="topFixed">
+			<div class="opacityTopContainer">
+				<div class="fixedMain clr">
+					<div class="leftF">
+					<span class="title1">Полупрофессиональные и безопасные батуты с Польши!</span><br>
+					<span class="title2">Европейского производства. Соответствует всем стандартам Евросоюза</span></div>					
+					<div class="rightF">
+						<div class="call">
+							<div><br></div>
+							<div><a href="tel:+380963733007"><span class="red">+38 (097)</span> 679-72-52</a></div>
+							<div><br></div>
+						</div>
+						<div class="call-button"><img class="img-button" onClick="ShowObj('popup');" src="assets/zakazat-zvonok.png"></div>
+					</div>			
+				</div>
+			</div>			
+			<div class="fixedBorder"></div>
+		</div>		
+		<div class="mainContainer">
+			<div class="batut">
+				<img src="assets/batut.png">
+			</div>
+
+			<form action="https://frozen-spire-03592.herokuapp.com/send" method="post" id="form1"  class="offer">
+				<input type="hidden" name="reff" value="">
+				<div>
+					<div class="offer-head">
+						АКЦИЯ!
+						<div style="font-size: 24px;">Скидки на все батуты <span style="color: #f7ee03;">до -40%</span></div>
+					</div>
+					<div class="offer-body">
+						<div>До конца акции осталось:</div>
+						<div class="timer-field" id="TimerD">17</div>
+						<div class="timer-field" id="TimerH">17</div>
+						<div class="timer-field" id="TimerM">17</div>
+						<div class="timer-field-last" id="TimerS">17</div>
+						<div class="input-field-box">
+							<input id="name_3" name="name" type="text" class="input-field" value="Введите Ваше имя..." onFocus="this.value = ''">
+							<input id="phone_3" name="phone" type="text" class="input-field" value="Введите Ваш телефон..." onFocus="this.value = ''">
+						</div>
+						<div class="input-button"><img class="img-button" src="assets/send-order.png" onClick="if(gid('name_3').value == 'Введите Ваше имя...' || gid('name_3').value == '' || gid('phone_3').value == 'Введите Ваш телефон...' || gid('phone_3').value == '') { alert('Заполните все поля!'); return; };document.getElementById('form1').submit();"></div>
+					</div>
+				</div>
+			</form>
+		</div>	
+		<div class="accomplishments">
+			<div class="acc-item">
+				<div class="acc-item-image"><image src="assets/quality.png"></div>
+				<div class="acc-item-text">
+					<div class="acc-item-text-head">Европейское качество</div>
+					<div class="acc-item-text-body">Наши батуты изготавливаются в Польше. Качественно и на совесть, согласно Европейским стандартам.</div>
+				</div>
+			</div>
+			<div class="acc-item">
+				<div class="acc-item-image"><image src="assets/easy.png"></div>
+				<div class="acc-item-text">
+					<div class="acc-item-text-head">Простота в эксплуатации</div>
+					<div class="acc-item-text-body">Вы можете самостоятельно, быстро складывать и раскладывать батут. Все просто и удобно.
+					</div>
+				</div>
+			</div>
+			<div class="acc-item">
+				<div class="acc-item-image"><image src="assets/safety.png"></div>
+				<div class="acc-item-text">
+					<div class="acc-item-text-head">Безопасность</div>
+					<div class="acc-item-text-body">Безопасность гарантирует защитная сетка высокого качества, и крепкая система крепления.
+					</div>
+				</div>
+			</div>
+			<div class="acc-item">
+				<div class="acc-item-image"><image src="assets/reliability.png"></div>
+				<div class="acc-item-text">
+					<div class="acc-item-text-head">Надежность</div>
+					<div class="acc-item-text-body">Батут сделан из качественных и долговечных материалов. Будет служить Вам годами.
+					</div>
+				</div>
+			</div>
+		</div>		
+		<div class="divide-line">
+			<div class="divide-line-label"><span>АССОРТИМЕНТ</span></div>
+		</div>		
+
+		<div class="assortment">
+			<div class="assort-item">
+				<div class="assort-item-header">Батут с сеткой <span style="color: red;">140 см</span></div>
+				<div class="assort-item-image">
+					<div class="assort-item-price-border">140 см</div>
+					<img src="assets/batut-1.jpg">
+				</div>
+				<div class="assort-item-price clr">
+					<div class="assort-item-price-text-s">4400 грн</div>
+					<div class="assort-item-price-text">3099 грн</div>
+				</div>
+				<div class="assort-item-buttons">
+					<div class="assort-item-buttons-buy"><img class="img-button" onClick="gid('batutName').value = 'Батут 140 см'; ShowObj('popup');" src="assets/buy.png"></div>
+					<div class="assort-item-buttons-details"><img class="img-button" onClick="ShowDetails('popup_details', '140');gid('batutName').value = 'Батут 140 см';" src="assets/details.png"></div>
+
+							<input id="batut_info140" type="hidden" value="
+							Идеально подходит как для тренировки так и для развлечения.<br>
+							Батут диаметром 140см.<br>
+							Изготовлен из высококачественных материалов (устойчивы к УФ)<br>
+							Мат изготовлен из материалов высочайшего качества.<br>
+							Батут оснащен резиновыми натяжителями, закрытыми специальным прокладочным материалом.<br>
+							Поверхность окружена защитной сеткой на молнии.<br>
+							<br>
+							Дополнительные преимущества:<br>
+							- улучшение состояния здоровья<br>
+							- улучшение кровообращения<br>
+							- сжигание калорий<br>
+							<br>
+							Идеальное удовлетворение в летние дни! Безопасность батутов в процессе использования подтверждено декларацией в соответствии со стандартами ЕС.<br>
+							<br>
+							100% БЕЗОПАСНОСТИ ДЛЯ ВАШИХ ДЕТЕЙ.">
+
+							<input id="batut_tech140" type="hidden" value="Технические характеристики:<br>
+							Общая высота: 158,5 см<br>
+							Высота батута: 36 см<br>
+							Высота сетки: 122 см<br>
+							Диаметр: 140 см<br>
+							Количество ног: 6<br>
+							Вес: 13.7 кг<br>
+							Коробки: 1">
+				</div>
+			</div>
+
+			<div class="assort-item">
+				<div class="assort-item-header">Батут с сеткой <span style="color: red;">183 см</span></div>
+				<div class="assort-item-image">
+					<div class="assort-item-price-border">183 см</div>
+					<img src="assets/batut-2.jpg">
+				</div>
+				<div class="assort-item-price clr">
+					<div class="assort-item-price-text-s">5790 грн</div>
+					<div class="assort-item-price-text">4299 грн</div>
+				</div>
+				<div class="assort-item-buttons">
+					<div class="assort-item-buttons-buy"><img class="img-button" onClick="gid('batutName').value = 'Батут 183 см'; ShowObj('popup');" src="assets/buy.png"></div>
+					<div class="assort-item-buttons-details"><img class="img-button" onClick="ShowDetails('popup_details', '183');gid('batutName').value = 'Батут 183 см';" src="assets/details.png"></div>
+
+							<input id="batut_info183" type="hidden" value="Батут с сеткой и металлической лесенкой.<br>
+							Он выполнен в соответствии со всеми стандартами безопасности. Батут предназначен для детей и взрослых. <br>
+							Прыжки на батуте позволяет улучшить координацию движений, по привлечению в то же время почти всех групп мышц. <br>
+							Идеальный получить удовольствие в период летних дней!<br>
+							В комплекте с батутом вы получаете лесенку (на 1-2 шага) .">
+
+							<input id="batut_tech183" type="hidden" value="Технические характеристики:<br>
+							Диаметр: 183 (6 футов)<br>
+							Общая высота: 172 см<br>
+							Высота батута: 50см<br>
+							Высота сетки: 120 см<br>
+							Макс. вес пользователя: 100 кг<br>
+							Количество пружин: 36 шт<br>
+							Количество ног/столбцов 3двойные/6<br>
+							Количество упаковок: 1<br>
+							Размеры и вес упаковки: 
+							104 x 43 x 25cm - около 26,6 кг<br>
+							Сетка: Да<br>
+							Польское руководство: Да<br>
+							Лестница в наборе:Да<br>
+							Производитель: Польша">
+				</div>
+			</div>
+
+			<div class="assort-item">
+				<div class="assort-item-header">Батут с сеткой <span style="color: red;">252 см</span></div>
+				<div class="assort-item-image">
+					<div class="assort-item-price-border">252 см</div>
+					<img src="assets/batut-2.jpg">
+				</div>
+				<div class="assort-item-price clr">
+					<div class="assort-item-price-text-s">6400 грн</div>
+					<div class="assort-item-price-text">4450 грн</div>
+				</div>
+				<div class="assort-item-buttons">
+					<div class="assort-item-buttons-buy"><img class="img-button" onClick="gid('batutName').value = 'Батут 252 см'; ShowObj('popup');" src="assets/buy.png"></div>
+					<div class="assort-item-buttons-details"><img class="img-button" onClick="ShowDetails('popup_details', '252');gid('batutName').value = 'Батут 252 см';" src="assets/details.png"></div>
+
+							<input id="batut_info252" type="hidden" value="Батут с сеткой и металлической лесенкой.<br>
+							Он выполнен в соответствии со всеми стандартами безопасности. <br>
+							Батут предназначен для детей и взрослых. <br>
+							Прыжки на батуте позволяет улучшить координацию движений, по привлечению в то же время почти всех групп мышц. <br>
+							Идеальный получить удовольствие в период летних дней!<br>
+							В комплекте с батутом вы получаете лесенку (на 1-2 шага) .">
+
+							<input id="batut_tech252" type="hidden" value="Технические характеристики:<br>
+							Диаметр: 252cm (8 футов)<br>
+							Высота: около 210см<br>
+							Высота батута: 51см<br>
+							Высота сетки: 160см<br>
+							Макс. вес пользователя: 120 кг<br>
+							Количество пружин: 42 шт<br>
+							Количество ног/столбцов: 3 двойные /6<br>
+							Количество упаковок: 1<br>
+							Размеры / вес картона : <br>
+							1) 132,5 х 45 х 24см / 35 кг<br>
+						   	Сетка: Да<br>
+							Лестница: Да<br>
+							Инструкция: Да<br>
+							Производитель: Польша">
+				</div>
+			</div>
+
+			<div class="assort-item">
+				<div class="assort-item-header">Батут с сеткой <span style="color: red;">312 см</span></div>
+				<div class="assort-item-image">
+					<div class="assort-item-price-border">312 см</div>
+					<img src="assets/batut-2.jpg">
+				</div>
+				<div class="assort-item-price clr">
+					<div class="assort-item-price-text-s">8970 грн</div>
+					<div class="assort-item-price-text">5899 грн</div>
+				</div>
+				<div class="assort-item-buttons">
+					<div class="assort-item-buttons-buy"><img class="img-button" onClick="gid('batutName').value = 'Батут 312 см'; ShowObj('popup');" src="assets/buy.png"></div>
+					<div class="assort-item-buttons-details"><img class="img-button" onClick="ShowDetails('popup_details', '312');gid('batutName').value = 'Батут 312 см';" src="assets/details.png"></div>
+
+							<input id="batut_info312" type="hidden" value="Батут с сеткой и металлической лесенкой.<br>
+							Он выполнен в соответствии со всеми стандартами безопасности. <br>
+							Батут предназначен для детей и взрослых. <br>
+							Прыжки на батуте позволяет улучшить координацию движений, по привлечению в то же время почти всех групп мышц. <br>
+							Идеальный получить удовольствие в период летних дней!<br>
+							В комплекте с батутом вы получаете лесенку (на 1-2 шага) .">
+
+							<input id="batut_tech312" type="hidden" value="Технические характеристики:<br>
+							Диаметр: 312cm (10 футов)<br>
+							Высота: около 250см<br>
+							Высота батута: 70см<br>
+							Высота сетки: 180см<br>
+							Макс. вес пользователя: 140 кг<br>
+							Количество пружин: 54 шт<br>
+							Количество ног/столбцов: 3двойные / 6<br>
+							Количество упаковок: 2<br>
+							Размеры / вес картона : <br>
+							1) 163х 45 х 18 см / 24 кг<br>
+							2) 119 х 30 х 18,4 см / 20 кг<br>
+							Сетка: Да<br>
+							Лестница: Да<br>
+							Инструкция: Да<br>
+							Производитель: Польша">
+				</div>
+			</div>
+
+			<div class="assort-item" style="margin-left: 0px;">
+				<div class="assort-item-header">Батут с сеткой <span style="color: red;">374 см</span></div>
+				<div class="assort-item-image">
+					<div class="assort-item-price-border">374 см</div>
+					<img src="assets/batut-2.jpg">
+				</div>
+				<div class="assort-item-price clr">
+					<div class="assort-item-price-text-s">12180 грн</div>
+					<div class="assort-item-price-text">8299 грн</div>
+				</div>
+				<div class="assort-item-buttons">
+					<div class="assort-item-buttons-buy"><img class="img-button" onClick="gid('batutName').value = 'Батут 374 см'; ShowObj('popup');" src="assets/buy.png"></div>
+					<div class="assort-item-buttons-details"><img class="img-button" onClick="ShowDetails('popup_details', '374');gid('batutName').value = 'Батут 374 см';" src="assets/details.png"></div>
+							<input id="batut_info374" type="hidden" value="Батут с сеткой и металлической лесенкой.<br>
+							Он выполнен в соответствии со всеми стандартами безопасности. <br>
+							Батут предназначен для детей и взрослых. <br>
+							Прыжки на батуте позволяет улучшить координацию движений, по привлечению в то же время почти всех групп мышц. <br>
+							Идеальный получить удовольствие в период летних дней!<br>
+							В комплекте с батутом вы получаете лесенку (на 1-2 шага) .">
+							<input id="batut_tech374" type="hidden" value="Технические характеристики:<br>
+							Диаметр: 374cm (12 футов)<br>
+							Высота: около 260см<br>
+							Высота батута: 70см<br>
+							Высота сетки: 180см<br>
+							Макс. вес пользователя: 150 кг<br>
+							Количество пружин: 64 шт<br>
+							Количество ног/столбцов: 4 двойные / 8<br>
+							Количество упаковок: 2<br>
+							Размеры / вес упаковки: <br>
+							1) 147 х 37 х 21 см / 27 кг<br>
+							2) 151 х 32 х 21 см / 26 кг<br>
+							Сетка: Да<br>
+							Лестница: Да<br>
+							Инструкция: Да<br>
+							Производитель: Польша">
+				</div>
+			</div>
+
+			<div class="assort-item">
+				<div class="assort-item-header">Батут с сеткой <span style="color: red;">404 см</span></div>
+				<div class="assort-item-image">
+					<div class="assort-item-price-border">404 см</div>
+					<img src="assets/batut-2.jpg">
+				</div>
+				<div class="assort-item-price clr">
+					<div class="assort-item-price-text-s">12600 грн</div>
+					<div class="assort-item-price-text">8999 грн</div>
+				</div>
+				<div class="assort-item-buttons">
+					<div class="assort-item-buttons-buy"><img class="img-button" onClick="gid('batutName').value = 'Батут 404 см'; ShowObj('popup');" src="assets/buy.png"></div>
+					<div class="assort-item-buttons-details"><img class="img-button" onClick="ShowDetails('popup_details', '404');gid('batutName').value = 'Батут 404 см';" src="assets/details.png"></div>
+							<input id="batut_info404" type="hidden" value="Батут с сеткой и металлической лесенкой.<br>
+							Он выполнен в соответствии со всеми стандартами безопасности. <br>
+							Батут предназначен для детей и взрослых. <br>
+							Прыжки на батуте позволяет улучшить координацию движений, по привлечению в то же время почти всех групп мышц. <br>
+							Идеальный получить удовольствие в период летних дней!<br>
+							В комплекте с батутом вы получаете лесенку (на 1-2 шага) .">
+							<input id="batut_tech404" type="hidden" value="Технические характеристики:<br>
+							Диаметр: 404cm (13 футов)<br>
+							Высота: около 270см<br>
+							Высота батута: 70см<br>
+							Высота сетки: 180см<br>
+							Макс. вес пользователя: 150 кг<br>
+							Количество пружин: 72шт<br>
+							Количество ног/столбцов: 4 двойные / 8<br>
+							Количество упаковок: 2<br>
+							Размеры / вес упаковки: <br>
+							1) 157 х 40 х 23 см / 29 кг<br>
+							2) 161 х 32 х 21 см / 28 кг<br>
+							Сетка: Да<br>
+							Лестница: Да<br>
+							Инструкция: Да<br>
+							Производитель: Польша">
+				</div>
+			</div>
+
+			<div class="assort-item">
+				<div class="assort-item-header">Батут с сеткой <span style="color: red;">435 см</span></div>
+				<div class="assort-item-image">
+					<div class="assort-item-price-border">435 см</div>
+					<img src="assets/batut-2.jpg">
+				</div>
+				<div class="assort-item-price clr">
+					<div class="assort-item-price-text-s">13990 грн</div>
+					<div class="assort-item-price-text">9985 грн</div>
+				</div>
+				<div class="assort-item-buttons">
+					<div class="assort-item-buttons-buy"><img class="img-button" onClick="gid('batutName').value = 'Батут 435 см'; ShowObj('popup');" src="assets/buy.png"></div>
+					<div class="assort-item-buttons-details"><img class="img-button" onClick="ShowDetails('popup_details', '435');gid('batutName').value = 'Батут 435 см';" src="assets/details.png"></div>
+
+							<input id="batut_info435" type="hidden" value="Батут с сеткой и металлической лесенкой.<br>
+							Он выполнен в соответствии со всеми стандартами безопасности.<br>
+							Батут предназначен для детей и взрослых.<br>
+							Прыжки на батуте позволяет улучшить координацию движений, по привлечению в то же время почти всех групп мышц.<br>
+							Идеальный получить удовольствие в период летних дней!<br>
+							В комплекте с батутом вы получаете лесенку (на 1-2 шага) .">
+
+							<input id="batut_tech435" type="hidden" value="Технические характеристики:<br>
+							Диаметр: 435cm (14 футов)<br>
+							Высота: около 260см<br>
+							Высота батута: 70см<br>
+							Высота сетки: 180см<br>
+							Макс. вес пользователя: 160 кг<br>
+							Количество пружин: 80шт<br>
+							Количество ног/столбцов: 4 двойные / 8<br>
+							Количество упаковок: 3<br>
+							Размеры / вес упауовки: <br>
+							1) 172 х 40 х 21 см / 23 кг<br>
+							2) 172 х 37 х 18 см / 26,6 кг<br>
+							3) 119 х 32 х 20 см / 20 кг<br>
+							Сетка: Да<br>
+							Лестница: Да<br>
+							Инструкция: Да<br>
+							Производитель: Польша">
+
+				</div>
+			</div>
+			
+			<div class="assort-item">
+				<div class="assort-item-header">Батут с сеткой <span style="color: red;">465 см</span></div>
+				<div class="assort-item-image">
+					<div class="assort-item-price-border">465 см</div>
+					<img src="assets/batut-2.jpg">
+				</div>
+				<div class="assort-item-price clr">
+					<div class="assort-item-price-text-s">14700 грн</div>
+					<div class="assort-item-price-text">10490 грн</div>
+				</div>
+				<div class="assort-item-buttons">
+					<div class="assort-item-buttons-buy"><img class="img-button" onClick="gid('batutName').value = 'Батут 465 см'; ShowObj('popup');" src="assets/buy.png"></div>
+					<div class="assort-item-buttons-details"><img class="img-button" onClick="ShowDetails('popup_details', '465');gid('batutName').value = 'Батут 465 см';" src="assets/details.png"></div>
+
+							<input id="batut_info465" type="hidden" value="Батут с сеткой и металлической лесенкой.<br>
+							Он выполнен в соответствии со всеми стандартами безопасности. <br>
+							Батут предназначен для детей и взрослых. <br>
+							Прыжки на батуте позволяет улучшить координацию движений, по привлечению в то же время почти всех групп мышц. <br>
+							Идеальный получить удовольствие в период летних дней!<br>
+							В комплекте с батутом вы получаете лесенку (на 1-2 шага) .">
+
+							<input id="batut_tech465" type="hidden" value="Технические характеристики:<br>
+							Диаметр: 465cm (15 футов)<br>
+							Высота: около 260см<br>
+Высота батута: 70см<br>
+Высота сетки: 180см<br>
+Макс. вес пользователя: 180 кг<br>
+Количество пружин: 88шт<br>
+Количество ног/столбцов: 4 двойные / 8<br>
+Количество упаковок: 3<br>
+Размеры / вес упауовки: <br>
+1) 182 х 41 х 21 см / 25 кг<br>
+2) 189 х 32 х 18 см / 28 кг<br>
+3) 119 х 34 х 22 см / 16 кг<br>
+							Сетка: Да<br>
+							Лестница: Да<br>
+							Инструкция: Да<br>
+							Производитель: Польша">
+				</div>
+			</div>
+
+					</div>
+
+		<div class="offer-blue-container">
+			<div class="offer-blue-subcontainer clr">
+				<div class="offer-blue-image">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/-Az76hmr5Uk" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<form action="https://frozen-spire-03592.herokuapp.com/send" method="post" id="form2" class="offer-2">
+				<input type="hidden" name="reff" value="">
+				<div>
+					<div class="offer-head">
+						АКЦИЯ!
+						<div style="font-size: 24px;">Скидки на все батуты <span style="color: #f7ee03;">до -40%</span></div>
+					</div>
+					<div class="offer-body">
+						<div>До конца акции осталось:</div>
+						<div class="timer-field" id="TimerD1">17</div>
+						<div class="timer-field" id="TimerH1">17</div>
+						<div class="timer-field" id="TimerM1">17</div>
+						<div class="timer-field-last" id="TimerS1">17</div>
+						<div class="input-field-box">
+							<input id="name_4" name="name" type="text" class="input-field" value="Введите Ваше имя..." onFocus="this.value = ''">
+							<input id="phone_4" name="phone" type="text" class="input-field" value="Введите Ваш телефон..." onFocus="this.value = ''">
+						</div>
+						<div class="input-button"><img class="img-button" src="assets/send-order.png" onClick="if(gid('name_4').value == 'Введите Ваше имя...' || gid('name_4').value == '' || gid('phone_4').value == 'Введите Ваш телефон...' || gid('phone_4').value == '') { alert('Заполните все поля!'); return; };document.getElementById('form2').submit();"></div>
+					</div>
+				</div>
+				</form>
+			</div>
+		</div>		
+
+		<div class="divide-line" style="margin-top: 30px;">
+			<div class="divide-line-label"><span>ПРЕИМУЩЕСТВА НАШИХ БАТУТОВ</span></div>
+		</div>
+		
+		<div class="benefits clr">
+			<div class="benefits-points">
+				<div class="benefits-points-item clr">
+					<div class="benefits-point">1</div>
+					<div class="benefits-text">Высокая сетка надежно прошита сверху.</div>
+				</div>
+				<div class="benefits-points-item clr">
+					<div class="benefits-point">2</div>
+					<div class="benefits-text">Столбцы батута покрыты защитной неопреновой пеной.</div>
+				</div>
+				<div class="benefits-points-item clr">
+					<div class="benefits-point">3</div>
+					<div class="benefits-text">Поверхность окружена защитной сеткой на 2 молнии.</div>
+				</div>
+				<div class="benefits-points-item clr">
+					<div class="benefits-point">4</div>
+					<div class="benefits-text">Прочный, водонепроницаемый, 8-кратный сшитый мат (батут).</div>
+				</div>
+				<div class="benefits-points-item clr">
+					<div class="benefits-point">5</div>
+					<div class="benefits-text">Оцинкованные, гальванизованные пружины, покрытые специальным защитным материалом.</div>
+				</div>
+				<div class="benefits-points-item clr">
+					<div class="benefits-point">6</div>
+					<div class="benefits-text">Увеличенная высота для максимальной безопасности.</div>
+				</div>
+				<div class="benefits-points-item clr">
+					<div class="benefits-point">7</div>
+					<div class="benefits-text">U-образные двойные стальные ножки обеспечивают надежность конструкции.</div>
+				</div>
+				<div class="benefits-points-item clr">
+					<div class="benefits-point">8</div>
+					<div class="benefits-text">В комплекте с батутом вы получите качественную, прочную лесенку.</div>
+				</div>			
+			</div>
+			<div class="benefits-image"><img src="assets/batut-3.jpg"></div>
+		</div>
+		
+		<div class="divide-line">
+			<div class="divide-line-label" style="margin-top: 1	0px;"><span>ПОЧЕМУ ПОКУПАЮТ БАТУТЫ У НАС <br>И ОСТАЮТСЯ ДОВОЛЬНЫ</span></div>
+		</div>
+
+		<div class="happy clr">
+			<div class="happy-points">
+				<div class="happy-points-item">
+					<div class="happy-point"></div>
+					<div class="happy-text">Батут сделан из качественных материалов, которые прошли<br> все соответствующие испытания согласно европейским стандартам.</div>
+				</div>
+				<div class="happy-points-item">
+					<div class="happy-point"></div>
+					<div class="happy-text">Оплатить покупку Вы можете при получении либо на карту "ПриватБанка".</div>
+				</div>
+				<div class="happy-points-item">
+					<div class="happy-point"></div>
+					<div class="happy-text">100% возврат денег в течение 14 дней если батут Вам не подошел.</div>
+				</div>
+				<div class="happy-points-item">
+					<div class="happy-point"></div>
+					<div class="happy-text">Постоянные акции, скидки и подарки для ниших клиентов.</div>
+				</div>
+				<div class="happy-points-item">
+					<div class="happy-point"></div>
+					<div class="happy-text">10 лет гарантии на каркас. 2 года - на мат.</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="offer-blue-container">
+			<div class="offer-blue-subcontainer clr">
+				<div class="offer-blue-image-2"><img src="assets/boy.png"></div>
+				<form action="https://frozen-spire-03592.herokuapp.com/send" method="post" id="form3" class="offer-2">
+				<input type="hidden" name="reff" value="">
+				<div>
+					<div class="offer-head">
+						АКЦИЯ!
+						<div style="font-size: 24px;">Скидки на все батуты <span style="color: #f7ee03;">до -40%</span></div>
+					</div>
+					<div class="offer-body">
+						<div>До конца акции осталось:</div>
+						<div class="timer-field" id="TimerD2">17</div>
+						<div class="timer-field" id="TimerH2">17</div>
+						<div class="timer-field" id="TimerM2">17</div>
+						<div class="timer-field-last" id="TimerS2">17</div>
+						<div class="input-field-box">
+							<input id="name_5" name="name" type="text" class="input-field" value="Введите Ваше имя..." onFocus="this.value = ''">
+							<input id="phone_5" name="phone" type="text" class="input-field" value="Введите Ваш телефон..." onFocus="this.value = ''">
+						</div>
+						<div class="input-button"><img class="img-button" src="assets/send-order.png" onClick="if(gid('name_5').value == 'Введите Ваше имя...' || gid('name_5').value == '' || gid('phone_5').value == 'Введите Ваш телефон...' || gid('phone_5').value == '') { alert('Заполните все поля!'); return; };document.getElementById('form3').submit();"></div>
+					</div>
+				</div>
+				</form>
+			</div>
+		</div>	
+
+		<div class="divide-line" style="margin-top: 100px;">
+			<div class="divide-line-label" style="margin-top: -60px;"><span>ПРЕИМУЩЕСТВА НАД ДЕШЕВЫМИ<br>КИТАЙСКИМИ БАТУТАМИ</span></div>
+		</div>
+
+		<div class="chinaCompare-container clr">
+			<div class="chinaCompare-left">
+				<div class="chinaCompare-left-head">Наши Батуты <img src="assets/good.png"></div>
+				<div class="chinaCompare-left-item">
+					<div class="chinaCompare-left-item-head">Пружины</div>
+					<div class="chinaCompare-left-item-text">Пружины сделаны из качественного оцинкованного металла, они будут служить вам годами и не потребуют замены.</div>
+				</div>
+				<div class="chinaCompare-left-item">
+					<div class="chinaCompare-left-item-head">Мат</div>
+					<div class="chinaCompare-left-item-text">Мат - плетение из сверхпрочного полипропилена, сплетенный таким образом, что даже после долгих лет использования он не теряет первоначальные размеры и пропорции. Также не выгорает и не выцветает на солнце. Устойчив к холоду, влаге и морозу.<br></div>
+				</div>
+				<div class="chinaCompare-left-item">
+					<div class="chinaCompare-left-item-head">Сетка</div>
+					<div class="chinaCompare-left-item-text">Сетка сделана из сверхпрочного полипропилена, который при физическом контакте минимизирует трение между кожей и сеткой.</div>
+				</div>
+				<div class="chinaCompare-left-item">
+					<div class="chinaCompare-left-item-head">Каркас</div>
+					<div class="chinaCompare-left-item-text">Прочная оцинкованная сталь (для повышения устойчивости оцинкованная снаружи и изнутри), которая предотвращает образование коррозии, а ее толщина позволяет выдерживать большие нагрузки и служить Вам годами.</div>
+				</div>
+				<div class="chinaCompare-left-item">
+					<div class="chinaCompare-left-item-head">Пластик</div>
+					<div class="chinaCompare-left-item-text">Качественный сертифицированный пластик, не выгорает на солнце, абсолютно безопасен.<br><br></div>
+				</div>
+			</div>		
+
+			<div class="chinaCompare-right">
+				<div class="chinaCompare-right-head">Китайские батуты <img src="assets/poor.png"></div>
+				<div class="chinaCompare-right-item">
+					<div class="chinaCompare-right-item-head">Пружины</div>
+					<div class="chinaCompare-right-item-text">Со временем пружины из некачественного сплава растягиваются и батут теряет свою упругость.<br><br></div>
+				</div>
+				<div class="chinaCompare-right-item">
+					<div class="chinaCompare-right-item-head">Мат</div>
+					<div class="chinaCompare-right-item-text">Мат сделан из тонкого эластичного материала, который со временем растягивается и провисает.<br><br><br><br><br></div>
+				</div>
+				<div class="chinaCompare-right-item">
+					<div class="chinaCompare-right-item-head">Сетка</div>
+					<div class="chinaCompare-right-item-text">При резком физическом контакте с сеткой можно получить повреждения кожи.<br><br></div>
+				</div>
+				<div class="chinaCompare-right-item">
+					<div class="chinaCompare-right-item-head">Каркас</div>
+					<div class="chinaCompare-right-item-text">Алюминий, или тонкая сталь, быстро покрывается коррозией, и ломается в местах спайки.<br><br><br><br></div>
+				</div>
+				<div class="chinaCompare-right-item">
+					<div class="chinaCompare-right-item-head">Пластик</div>
+					<div class="chinaCompare-right-item-text">Обычно, некачественный и дешевый пластик, который под действием солнечных лучей не выделяет вредные токсичные испарения.</div>
+				</div>
+			</div>
+		</div>
+				
+		<div class="divide-line" style="margin-top: 30px;">
+			<div class="divide-line-label"><span>КАК МЫ РАБОТАЕМ</span></div>
+		</div>
+		
+		<div style="padding-top: 80px; width: 1100px; margin: 0 auto; text-align: center;"><img src="assets/work.png"></div>
+				
+		<div class="cert-container">
+			<div class="cert-subcontainer">
+				СЕРТИФИКАТЫ ПРОИЗВОДИТЕЛЕЙ
+				<br>
+				<div style="margin-top: 30px;"><img src="assets/cert.png"></div>
+			</div>
+		</div>
+
+		<div class="divide-line" style="margin-top: 30px;">
+			<div class="divide-line-label"><span>ОТЗЫВЫ ПОКУПАТЕЛЕЙ</span></div>
+		</div>		
+
+		<div class="feedback-container">
+			<div style="overflow-y: auto; overflow-x: hidden; height: 500px;">
+				<div class="feedback-item">
+					<div class="feedback-item-container">
+						<div class="feedback-item-head">Марина 39 лет домохозяйка.</div>
+						<div class="feedback-item-star">Оценка:</div>
+					</div>
+					<div class="feedback-item-text">Купила батут для своей дочери, очень довольна простотой сборки, хорошей европейским качеством. Прыгают вместе с дочерью, очень весело проводить время. Спасибо.</div>
+				</div>
+				<div class="feedback-item-divide"></div>
+				<div class="feedback-item">
+					<div>
+						<div class="feedback-item-head">Алексей</div>
+						<div class="feedback-item-star">Оценка:</div>
+					</div>
+					<div class="feedback-item-text">Купил батут, размер 317см, очень качественные части батута, прыгаю с удовольствие и безопасно себя чувствую во время прыжков.</div>
+				</div>
+				<div class="feedback-item-divide"></div>
+				<div class="feedback-item">
+					<div class="feedback-item-container">
+						<div class="feedback-item-head">Саша 24 лет студент</div>
+						<div class="feedback-item-star">Оценка:</div>
+					</div>
+					<div class="feedback-item-text">Доволен сервисом обслуживания, быстрой доставкой и качеством батута. Простой в сборке.</div>
+				</div>
+				<div class="feedback-item-divide"></div>
+				<div class="feedback-item">
+					<div class="feedback-item-container">
+						<div class="feedback-item-head">Алина 20 лет.</div>
+						<div class="feedback-item-star">Оценка:</div>
+					</div>
+					<div class="feedback-item-text">Суперова штука для проведения активного отдыха. Большое Вам спасибо.</div>
+				</div>
+				<div class="feedback-item-divide"></div>
+				<div class="feedback-item">
+					<div class="feedback-item-container">
+						<div class="feedback-item-head">Ігор 43 роки.</div>
+						<div class="feedback-item-star">Оценка:</div>
+					</div>
+					<div class="feedback-item-text">Купив батут на дачу для того , щоб мої діти активно проводили час на свіжому повітрі. Прочитав багато статтів щодо користі прижків на батуті, а саме дізнався, що : «Високо підстрибувати – незрівнянне задоволення. Потік позитивних емоцій і невичерпну користь для здоров’я отримують люди, які регулярно займаються на батуті вдома або на дачі.»</div>
+				</div>
+				<div class="feedback-item-divide"></div>
+				<div class="feedback-item">
+					<div class="feedback-item-container">
+						<div class="feedback-item-head">Ирина 32лет бухгалтер.</div>
+						<div class="feedback-item-star">Оценка:</div>
+					</div>
+					<div class="feedback-item-text">Детей не нужно заставлять заниматься спортом, они самостоятельно находят для себя комплекс упражнений на батуте.</div>
+				</div>
+				<div class="feedback-item-divide"></div>
+				<div class="feedback-item">
+					<div class="feedback-item-container">
+						<div class="feedback-item-head">Антон 27лет фитнес тренер .</div>
+						<div class="feedback-item-star">Оценка:</div>
+					</div>
+					<div class="feedback-item-text">Польза от прыжков на батуте сложно переоценить. Упражнения на батуте заметно улучшают мышечный тонус и состояние кожи, укрепляют сердечно-сосудистую систему и вестибулярный аппарат, улучшают кровообращение. Ни один вид аэробной активности не способен заменить занятия на батуте! У меня батут фирмы Нео - спорт уже второй год, очень доволен. Спасибо.</div>
+				</div>
+				<div class="feedback-item-divide"></div>
+				<div class="feedback-item">
+					<div class="feedback-item-container">
+						<div class="feedback-item-head">Диана студентка.</div>
+						<div class="feedback-item-star">Оценка:</div>
+					</div>
+					<div class="feedback-item-text">Тільки уявіть, що стрибки на батуті протягом 5 хвилин дозволяють спалювати стільки ж калорій, скільки 20 хвилинні заняття на біговій доріжці! За допомогою саме прижків на батуті скинула 5 кг і весело при цьому проводила час)))</div>
+				</div>
+				<div class="feedback-item-divide"></div>
+				<div class="feedback-item">
+					<div class="feedback-item-container">
+						<div class="feedback-item-head">Лена 30 років</div>
+						<div class="feedback-item-star">Оценка:</div>
+					</div>
+					<div class="feedback-item-text">Дивовижна річ, за допомогою якої можна схуднути і в той же час ... відпочити і розважитися - це батут. Дякую за хорошия якісний батут.</div>
+				</div>
+				<div class="feedback-item-divide"></div>
+				<div class="feedback-item">
+					<div class="feedback-item-container">
+						<div class="feedback-item-head">Зоряна мама.</div>
+						<div class="feedback-item-star">Оценка:</div>
+					</div>
+					<div class="feedback-item-text">Мне важно при покупке и выборе батута было чтобы он был качественный, выдержанный всем стандартам, потому что покупали его для нашего сыночка и для меня важна, чтобы он был максимально в безопасности, что я получила остановив свой ​​выбор на фирме NeoSport. Спасибо.</div>
+				</div>
+				<div class="feedback-item-divide"></div>
+				<div class="feedback-item">
+					<div class="feedback-item-container">
+						<div class="feedback-item-head">Максим 35 лет предприниматель.</div>
+						<div class="feedback-item-star">Оценка:</div>
+					</div>
+					<div class="feedback-item-text">Купил батут в подарок для своего сына. Сыну очень понравился мой подарок, он был приятно удивлен и мне благодарен, что выбрал именно такой подарок.</div>
+				</div>
+				<div class="feedback-item-divide"></div>
+				<div class="feedback-item">
+					<div class="feedback-item-container">
+						<div class="feedback-item-head">Саша 33 роки продавець – консультант.</div>
+						<div class="feedback-item-star">Оценка:</div>
+					</div>
+					<div class="feedback-item-text">Маю двох діток, для того, щоб привити любов до активного відпочинку наших дітей , вирішили з чоловіком придбати батут фірми NeoSport. Передивились багато варіантів і зупинились саме на цьому виробнику, тому що могли купити і дешевий батут, китайського виробництва, але для нас важлива і надійність конструкції самого батута, і якість його окремих елементів, тому що ми хотіли придбати батут не на один сезон….і придбали те, що хотіли. Велике Вам дякую.</div>
+				</div>
+				<div class="feedback-item-divide"></div>
+				<div class="feedback-item">
+					<div class="feedback-item-container">
+						<div class="feedback-item-head">Адріана 27 років домохазяйка.</div>
+						<div class="feedback-item-star">Оценка:</div>
+					</div>
+					<div class="feedback-item-text">Батут не тільки захоплює малюка грою на ньому , а й сприяє фізичному розвитку зростаючого дитячого організму , тому що стрибки на батуті допомагають дитині придбати хорошу фізичну форму.</div>
+				</div>
+			</div>			
+			<div style="width: 100%; text-align: right; padding-top: 20px;"><img class="img-button" onClick="ShowObj('popup_feedback');" src="assets/send.png"></div>
+		</div>
+
+		<div style="width: 1400px; padding-top: 80px; margin: 0 auto;">
+			<div style="text-align: center; background: transparent url('assets/ellipse.png') no-repeat; width: 1400px; margin: 0 auto; padding-top: 110px;">
+				<form action="https://frozen-spire-03592.herokuapp.com/send" method="post" id="form4" class="offer-3">
+				<input type="hidden" name="reff" value="">
+				<div>
+					<div class="offer-head-2">Купить батут с сеткой по акционной цене с гарантированным подарком прямо сейчас</div>
+					<div class="offer-body">
+						<div>До конца акции осталось:</div>
+						<div class="timer-field" id="TimerD3">17</div>
+						<div class="timer-field" id="TimerH3">17</div>
+						<div class="timer-field" id="TimerM3">17</div>
+						<div class="timer-field-last" id="TimerS3">17</div>
+						<div class="input-field-box">
+							<input id="name_6" name="name" type="text" class="input-field" value="Введите Ваше имя..." onFocus="this.value = ''">
+							<input id="phone_6" name="phone" type="text" class="input-field" value="Введите Ваш телефон..." onFocus="this.value = ''">
+						</div>
+						<div class="input-button"><img class="img-button" src="assets/send-order.png" onClick="if(gid('name_6').value == 'Введите Ваше имя...' || gid('name_6').value == '' || gid('phone_6').value == 'Введите Ваш телефон...' || gid('phone_6').value == '') { alert('Заполните все поля!'); return; };document.getElementById('form4').submit();"></div>
+					</div>
+				</div>
+				</form>
+			</div>
+		</div>
+		<div style="height: 100px;"></div>
+		
+		<div id="popup" style="display: none; width: 100%; height: 100%; position: fixed; background: rgba(0,0,0,0.4); z-index: 2; text-align: center; margin: 0 auto;">
+			<div style="width: 360px; margin: 100px auto; background: #d7e8f4; border: 10px solid white; height: 300px; z-index: 3; border-radius: 10px;">
+				<div style="padding-left: 5px; padding-right: 5px;cursor: pointer; clear: both; background: white; float: right; color: red; font-family:'Myriad Pro Semibold'; font-size: 18px; margin: 8px; border-bottom: 1px dashed white;" onClick="document.getElementById('popup').style.display = 'none';">Закрыть X</div>
+				
+				<form id="form5" action="https://frozen-spire-03592.herokuapp.com/send" method="post">
+				<input type="hidden" name="reff" value="">
+				<div style="margin-top: 100px;">
+					<div class="input-field-box">
+						<input type="hidden" id="batutName" name="batutName" value="">
+						<input id="name_1" name="name" type="text" class="input-field" value="Введите Ваше имя..." onFocus="this.value = ''">
+						<input id="phone_1" name="phone" type="text" class="input-field" value="Введите Ваш телефон..." onFocus="this.value = ''">
+					</div>
+					<div class="input-button"><img class="img-button" src="assets/zakazat-zvonok.png" onClick="if(gid('name_1').value == 'Введите Ваше имя...' || gid('name_1').value == '' || gid('phone_1').value == 'Введите Ваш телефон...' || gid('phone_1').value == '') { alert('Заполните все поля!'); return; };gid('form5').submit();"></div>
+				</div>
+				</form>
+			</div>	
+		</div>
+		
+		<div id="popup_details" style="display: none; width: 100%; height: 100%; position: absolute; background: rgba(0,0,0,0.4); z-index: 1; text-align: center; margin: 0 auto;">
+			<div style="position: relative; width: 1200px; margin: 100px auto; background: #d7e8f4; border: 10px solid white; z-index: 3; border-radius: 10px;" class="clr">
+				<div style="padding-left: 5px; padding-right: 5px;cursor: pointer; clear: both; background: white; float: right; color: red; font-family:'Myriad Pro Semibold'; font-size: 18px; margin: 8px; border-bottom: 1px dashed white;" onClick="document.getElementById('popup_details').style.display = 'none';">Закрыть X</div>
+				<div id="batut_details_container">
+					<div class="batut-details clr">
+						<div class="batut-img clr">
+							<div style="width: 360px; height: 280px;"><img width="360" height="280" id="ib" src="assets/b-1-1.jpg"></div>
+							<div class="small"><img onClick="ChangeImg('1');" id="ib1" src="assets/b-1-1.jpg"></div>
+							<div class="small"><img onClick="ChangeImg('2');" id="ib2" src="assets/b-1-2.jpg"></div>
+							<div class="small"><img onClick="ChangeImg('3');" id="ib3" src="assets/b-1-3.jpg"></div>
+							<div class="small"><img onClick="ChangeImg('4');" id="ib4" src="assets/b-1-4.jpg"></div>
+							<div class="small"><img onClick="ChangeImg('5');" id="ib5" src="assets/b-1-5.jpg"></div>
+						</div>
+						<div id="batut_info" class="batut-info"></div>
+						<div id="batut_tech" class="batut-tech"></div>
+						<div style="z-index: 50; clear: both; margin-top: 20px; float: left; width: 360px;">
+							<div class="input-button"><img class="img-button" src="assets/buy.png" onClick="ShowObj('popup');"></div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		
+		<div id="popup_feedback" style="display: none; width: 100%; height: 100%; position: fixed; background: rgba(0,0,0,0.4); z-index: 1; text-align: center; margin: 0 auto;">
+			<div style="width: 600px; margin: 100px auto; background: #d7e8f4; border: 10px solid white; height: 360px; z-index: 3; border-radius: 10px;">
+				<div style="padding-left: 5px; padding-right: 5px;cursor: pointer; clear: both; background: white; float: right; color: red; font-family:'Myriad Pro Semibold'; font-size: 18px; margin: 8px; border-bottom: 1px dashed white;" onClick="document.getElementById('popup_feedback').style.display = 'none';">Закрыть X</div>
+				<form id="form6" action="https://frozen-spire-03592.herokuapp.com/send-feedback" method="post">
+				<input type="hidden" name="reff" value="">
+				<div style="margin-top: 40px; height: 240px;">
+					<div class="input-field-box-2">
+						<input id="name_2" name="name" type="text" class="input-field-2" value="Введите Ваше имя..." onFocus="this.value = ''">
+						<input id="age_2" name="age" type="text" class="input-field-2" value="Введите Ваш возраст..." onFocus="this.value = ''">
+						<input id="dolgn_2" name="dolgn" type="text" class="input-field-2" value="Введите Вашу должность..." onFocus="this.value = ''">
+						<textarea id="feedback_text_2" name="feedback_text" onFocus="this.value = ''" style="height: 100px; width: 540px;" class="input-field-2">Введите Ваш отзыв...</textarea>
+					</div>
+				</div>
+				<img class="img-button" src="assets/send.png" onClick="if(gid('name_2').value == 'Введите Ваше имя...' || gid('name_2').value == '' || gid('feedback_text_2').value == 'Введите Ваш отзыв...' || gid('feedback_text_2').value == '' || gid('dolgn_2').value == 'Введите Вашу должность...' || gid('dolgn_2').value == '' || gid('age_2').value == 'Введите Ваш возраст...' || gid('age_2').value == '') { alert('Заполните все поля!'); return; };document.getElementById('form6').submit();">
+				</form>
+			</div>	
+		</div>
+
+		<footer>
+			<a href="politics.html" target="_blank" style="text-align: center;">Политика конфиденциальности</a>
+		</footer>
+	</body>
+</html>
